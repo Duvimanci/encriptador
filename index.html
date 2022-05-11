@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Encriptador de texto</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+
+        <header>
+            <div class="caja-logo">
+                <h1><img class="logo" src="imagenes/Vector.png"></h1>
+            </div>
+        </header>
+        
+        <main>
+
+            <section>
+            <input class="ingreso" type="text" value="Ingrese el texto aqui" onfocus="this.value=''">
+
+            <div class="descripcion">
+                <img class="exclamacion" src="imagenes/bi_exclamation-circle-fill.png">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            
+            <ul class="botones">
+                <button class="botonEnc" onclick=" btnEncriptar()" name="button" type="button">Encriptar</button>
+                <button class="botonDes" onclick=" btnDesencriptar()" name="button">Desencriptar</button>
+            </ul>
+            </section>
+
+            <section>
+                <div class="lateral">
+                    <textarea class="muestra"></textarea>
+                    <div class="muñeco" id="muñeco">
+                        <img src="imagenes/Muñeco.png">
+                    </div>
+                    <div class="texto-lateral" id="texto-lateral">
+                        <h2>Ningún mensaje fue encontrado</h2>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                    <div class="caja-botonCop">
+                        <button class="botonCop" id="botonCop" onclick="btnCopiar()" name="button">Copiar</button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <label class="pie">&copy Desarrollado por Juan José Dujmovic M. - 2022</label>
+        </footer>
+            
+    </body>
+    
+    <script src="encriptador.js"></script>
+    
+</html>
